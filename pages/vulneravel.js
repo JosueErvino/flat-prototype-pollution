@@ -26,7 +26,7 @@ export async function getServerSideProps(context) {
   console.log(out)
 
   return {
-    props: { msg: "Vulneravel" },
+    props: { msg: out.msg || "Vulneravel" },
   };
 }
 
